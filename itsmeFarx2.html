@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Blume - Galeri Layar Penuh</title>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    html, body {
+      font-family: sans-serif;
+      background-color: black;
+      color: white;
+      height: 100%;
+      overflow-y: auto;
+    }
+    .nav-button {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #00ff00;
+      border: 2px solid black;
+      box-shadow: 0 0 8px #00ff00;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .video-list-wrapper {
+      padding: 40px 40px 60px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 30px;
+    }
+    .video-item {
+      background-color: #111;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ff00;
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .video-item:hover {
+      transform: scale(1.05);
+    }
+    .video-item img {
+      width: 100%;
+      aspect-ratio: 16 / 18;
+      object-fit: cover;
+      display: block;
+    }
+    .video-info {
+      padding: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .video-info strong {
+      display: block;
+      color: #00ff00;
+      margin-bottom: 4px;
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 99;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00ff00;
+      animation: zoomIn 0.3s ease;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @media (max-width: 1200px) {
+      .video-list { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (max-width: 800px) {
+      .video-list { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="nav-button" onclick="window.location='ItsmeFarx.html'">⬅ Kembali</button>
+
+  <div class="video-list-wrapper">
+    <div class="video-list">
+      
+      <div class="video-item"><img src="img\1078854.png"><div class="video-info"><strong>Gambar 1</strong></div></div>
+      <div class="video-item"><img src="img\1382259.png"><div class="video-info"><strong>gambar 2</strong></div></div>
+      <div class="video-item"><img src="img\akabane.1999.600.4076812.jpg"><div class="video-info"><strong>gambar 3</strong></div></div>
+      <div class="video-item"><img src="img\akabane.1999.600.4076813.jpg"><div class="video-info"><strong>gambar 4</strong></div></div>
+      <div class="video-item"><img src="img\wacca〇わっか.600.3462995.jpg"><div class="video-info"><strong>gambar 5</strong></div></div>
+      <div class="video-item"><img src="img\wp10030720.jpg"><div class="video-info"><strong>gambar 6</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.15_f4c39a81.jpg"><div class="video-info"><strong>gambar 7</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.18_829f8ba8.jpg"><div class="video-info"><strong>gambar 8</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.18_f2e7921b.jpg"><div class="video-info"><strong>gambar 9</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.19_5f362106.jpg"><div class="video-info"><strong>gambar 10</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.20_9aaf3717.jpg"><div class="video-info"><strong>gambar 11</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.20_86c8874e.jpg"><div class="video-info"><strong>gambar 12</strong></div></div>
+
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.20_e3da8da7.jpg"><div class="video-info"><strong>gambar 13</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.21_21cebab6.jpg"><div class="video-info"><strong>gambar 14</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.21_533a678f.jpg"><div class="video-info"><strong>gambar 15</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.21_e9f887c7.jpg"><div class="video-info"><strong>gambar 16</strong></div></div>
+      <div class="video-item"><img src="img\Gambar WhatsApp 2025-07-04 pukul 22.19.22_1a84f127.jpg"><div class="video-info"><strong>gambar 17</strong></div></div>
+      <div class="video-item"><img src="img/18 a.jpg"><div class="video-info"><strong></strong></div></div>
+
+      <div class="video-item"><img src="img/19 a.jpg"><div class="video-info"><strong>gambar 19</strong></div></div>
+      <div class="video-item"><img src="img/20 a.jpg"><div class="video-info"><strong>gambar 20</strong></div></div>
+      <div class="video-item"><img src="img/21 a.jpg"><div class="video-info"><strong>gambar 21</strong></div></div>
+      <div class="video-item"><img src="img/22 a.jpg"><div class="video-info"><strong>gambar 22</strong></div></div>
+      <div class="video-item"><img src="img/23 a.jpg"><div class="video-info"><strong>gambar 23</strong></div></div>
+      <div class="video-item"><img src="img/24 a.jpg"><div class="video-info"><strong>gambar 24</strong></div></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" id="lightbox-img" alt="Preview">
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (!params.get("access")) {
+      alert("Akses ditolak! Silakan login terlebih dahulu.");
+      window.location.href = "itsmeFarx3.html";
+    }
+
+    const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+
+    // Aktifkan lightbox saat gambar diklik
+    document.querySelectorAll(".video-item img").forEach((img) => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt || "Preview Gambar";
+      });
+    });
+
+    // Tutup lightbox saat area luar gambar diklik
+    lightbox.addEventListener("click", (e) => {
+      if (e.target !== lightboxImg) {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
+      }
+    });
+
+    // Tutup dengan tombol ESC
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        lightbox.style.display = "none";
+        lightboxImg.src = "";
+      }
+    });
+    </script>
+    

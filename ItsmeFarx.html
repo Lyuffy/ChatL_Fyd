@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <title>Blume - Video Portal</title>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; font-family: Arial; overflow: hidden; }
+    .container { position: relative; height: 100vh; text-align: center; color: white; }
+    .background-video {
+      position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;
+    }
+    .overlay {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    }
+    .btn-nav {
+      margin: 10px;
+      padding: 12px 24px;
+      font-size: 16px;
+      color: white;
+      background-color: #00ff00;
+      border: 2px solid black;
+      box-shadow: 0 0 8px #00ff00;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="background-video">
+    <source src="media\SSYouTube.online_Loop Background  Live Wallpaper  Chilling Cat  No Sound_1080p.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="overlay">
+      <h1>Welcome to Blume</h1>
+      <button class="btn-nav" onclick="alert('Silakan login terlebih dahulu untuk mengakses galeri.')">➤ Masuk ke Galeri</button>
+      <button class="btn-nav" onclick="window.location='itsmeFarx3.html'">🔐 Login</button>
+    </div>
+  </div>
+</body>
+</html>
